@@ -1,3 +1,28 @@
+# 1.0.3 (2018-10-09)
+This a security release of the IoT Edge runtime.
+
+## Edge Agent
+### Features
+* Update C# SDK to 1.18.1 ([5e1a983](https://github.com/Azure/iotedge/commit/5e1a9836cd55ab3f81c6cf7c9c28018d2ca7f94b))
+
+### Bug Fixes
+* N/A
+
+## Edge Hub
+### Features
+* Update C# SDK to 1.18.1 ([5e1a983](https://github.com/Azure/iotedge/commit/5e1a9836cd55ab3f81c6cf7c9c28018d2ca7f94b))
+* Update Protocol Gateway to 2.0.1 ([5e1a983](https://github.com/Azure/iotedge/commit/5e1a9836cd55ab3f81c6cf7c9c28018d2ca7f94b))
+
+### Bug Fixes
+* N/A
+
+## iotedged
+### Features
+* N/A
+
+### Bug Fixes
+* N/A
+
 # 1.0.2 (2018-09-21)
 * Adds HTTP Proxy support across the various components of the runtime ([956c99f](https://github.com/Azure/iotedge/commit/956c99f11eb293dc2993620aec8f106933dbe09c))
 
