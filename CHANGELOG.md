@@ -10,7 +10,7 @@
 * Put experimental features behind experimental flags ([9e6ea0c](https://github.com/Azure/iotedge/commit/9e6ea0c7df6568554cb6508ca56a8f9ae489b07b))
 
 # 1.0.8-rc3 (2019-07-02)
-* Upgrade C# Client SDK to 1.20.1 and Service SDK to 1.18.1
+* Upgrade C# Client SDK to 1.20.3 and Service SDK to 1.18.1
 * Various improvements to `iotedge check` troubleshooting command
 
 ## Edge Agent
