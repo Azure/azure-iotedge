@@ -1,3 +1,9 @@
+# 1.0.8.1 (2019-08-27)
+## Edge Hub
+### Bug Fixes
+* EdgeHub: Fix delay in module 2 module messages ([06ec89f](https://github.com/Azure/iotedge/commit/06ec89f5220404fe24cea59e4c6241326f2c179a))
+* Set client subscriptions when cloud connection is re-created ([a274ca0](https://github.com/Azure/iotedge/commit/a274ca02bde1bdacc48d76b5b43abaf919c9d4fc))
+
 # 1.0.9-rc1 (2019-08-16)
 * Support running the Windows installer script in 32-bit PS host on 64-bit Windows ([76eacaf](https://github.com/Azure/iotedge/commit/76eacaf988e7d421b4e45c70a45d8160f1feaaa1))
 * `iotedge check` improvements ([8090d6c](https://github.com/Azure/iotedge/commit/8090d6c7fc47a377787d5d9ff15ed5fea894112c))
