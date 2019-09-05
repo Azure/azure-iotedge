@@ -1,3 +1,15 @@
+# 1.0.9-rc2 (2019-09-05)
+
+## Edge Hub
+### Bug fixes
+* Fix delay in module 2 module messages ([6907bef](https://github.com/Azure/iotedge/commit/6907bef066479cbdda2325722e7715e02966c4d1))
+* Add back V0 metrics ([0301448](https://github.com/Azure/iotedge/commit/03014487cd8b096afc81fbd63b12f0958faa9a45))
+* Change tags for messages_sent metric ([6376d92](https://github.com/Azure/iotedge/commit/6376d92412a1d4b6ea97b8c43669458df95cd48e))
+
+## iotedged
+### Bug fixes
+* Show certificate expiry in self-signed certs warning ([bb9b40c](https://github.com/Azure/iotedge/commit/bb9b40c5ac0311de060d9b85808651d0fb670230))
+
 # 1.0.8.1 (2019-08-27)
 ## Edge Hub
 ### Bug Fixes
