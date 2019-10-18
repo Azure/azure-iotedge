@@ -1,3 +1,13 @@
+# 1.0.8.3 (2019-10-18)
+## Notes
+* If using the C# SDK please use version 1.20.3
+
+## Edge Hub
+### Bug Fixes
+* Add ASC support ([466759f](https://github.com/Azure/iotedge/commit/466759fc6a24acec3b124af4f5f05dd98ab0d190))
+* Fix deployment status ([f602329](https://github.com/Azure/iotedge/commit/f602329a5555b7e32dda2326cf0dd6956c20a80f))
+* Fix message loss caused by connectivity exceptions ([e079073](https://github.com/Azure/iotedge/commit/e0790738e1888c1f8a53bf8ab2600edcb6eba304))
+
 # 1.0.8.2 (2019-09-27)
 ## Edge Hub
 ### Bug Fixes
