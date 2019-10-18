@@ -1,6 +1,6 @@
 # 1.0.8.3 (2019-10-18)
 ## Notes
-* If using the C# SDK please use version 1.20.3
+* If using the C# SDK, please use version 1.20.3
 
 ## Edge Hub
 ### Bug Fixes
