@@ -1,4 +1,4 @@
-# 1.0.9-rc3 (2019-09-20)
+# 1.0.9-rc3 (2019-11-21)
 ## Edge Hub
 ### Features
 * Update Twin max property depth and length limits to match IoTHub ([2d69f78](https://github.com/Azure/iotedge/commit/2d69f7879ee4c90e805f6ae6b0053d5b71b2947c))
