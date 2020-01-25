@@ -1,4 +1,5 @@
 # 1.0.8.5 (2020-01-23)
+
 ## Edge Hub
 ### Bug Fixes
 Hotfix windows security issue by updating base nanoserver images ([5a88e89e55f589c42c1b391794a1555d853dcef0](https://github.com/Azure/iotedge/commit/5a88e89e55f589c42c1b391794a1555d853dcef0))
