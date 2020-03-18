@@ -1,11 +1,19 @@
+# 1.0.9 (2020-03-18)
+## Edge Hub
+### Bug fixes
+* Use parallel processing for subscription processing ([eac1a18](https://github.com/Azure/iotedge/commit/eac1a1862bac70d09880a84df9d429eedacf58fb))
+* Set timeout on edgeHub's side for device and module client's OpenAsync ([1d37dc9](https://github.com/Azure/iotedge/commit/1d37dc941a2fcd6534f331470b4ea32aeae50d07))
+
 # 1.0.9-rc6 (2020-02-29)
 ## Edge Hub
 ### Bug Fixes
-Hotfix [Linux ARM32 and ARM64 security vulnerability](https://lists.ubuntu.com/archives/ubuntu-security-announce/2020-January/005286.html) by updating base dotnet core runtime images ([fa634ef](https://github.com/Azure/iotedge/commit/fa634efccdc9694e611d97c4dd57a44ad9b742bb))
+* Hotfix [Linux ARM32 and ARM64 security vulnerability](https://lists.ubuntu.com/archives/ubuntu-security-announce/2020-January/005286.html) by updating base dotnet core runtime images ([fa634ef](https://github.com/Azure/iotedge/commit/fa634efccdc9694e611d97c4dd57a44ad9b742bb))
+* Use LogLevel to limit RocksDB LOG file size ([c984f63](https://github.com/Azure/iotedge/commit/c984f6330daec8800e6887f666036df5bdc7ec68))
 
 ## Edge Agent
 ### Bug Fixes
-Hotfix [Linux ARM32 and ARM64 security vulnerability](https://lists.ubuntu.com/archives/ubuntu-security-announce/2020-January/005286.html) by updating base dotnet core runtime images ([fa634ef](https://github.com/Azure/iotedge/commit/fa634efccdc9694e611d97c4dd57a44ad9b742bb))
+* Hotfix [Linux ARM32 and ARM64 security vulnerability](https://lists.ubuntu.com/archives/ubuntu-security-announce/2020-January/005286.html) by updating base dotnet core runtime images ([fa634ef](https://github.com/Azure/iotedge/commit/fa634efccdc9694e611d97c4dd57a44ad9b742bb))
+* Use LogLevel to limit RocksDB LOG file size ([c984f63](https://github.com/Azure/iotedge/commit/c984f6330daec8800e6887f666036df5bdc7ec68))
 
 # 1.0.9-rc5 (2020-02-21)
 ## Edge Hub
