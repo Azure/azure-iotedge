@@ -14,7 +14,7 @@ HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
 1. INSTALLATION AND USE RIGHTS.
    a) General. You may install and use any number of copies of the software on 
       your devices (including to develop and test devices and applications) 
-      solely to interface with Microsoft Azure IoT.  
+      which interface with Microsoft Azure IoT.  
    b) Included Microsoft Components. The software includes Microsoft components 
       which are licensed to you under the terms of this agreement. You may only 
       use the included components with the software.
@@ -92,7 +92,7 @@ HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
    e) share, publish, distribute, or lend the software, provide the 
       software (except for any distributable code, subject to the terms above) 
       as a stand-alone hosted solution for others to use, or transfer the 
-    software or this agreement to any third party.
+      software or this agreement to any third party.
 5. EXPORT RESTRICTIONS. You must comply with all domestic and international 
    export laws and regulations that apply to the software, which include 
    restrictions on destinations, end users, and end use. For further 
