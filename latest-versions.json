@@ -1,5 +1,5 @@
 {
-    "iotedged": "1.0.9.2",
-    "azureiotedge-agent": "1.0.9.2",
-    "azureiotedge-hub": "1.0.9.2"
+    "iotedged": "1.0.9.3",
+    "azureiotedge-agent": "1.0.9.3",
+    "azureiotedge-hub": "1.0.9.3"
 }
