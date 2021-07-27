@@ -12,7 +12,8 @@
               .DEB _________________ {component}_{version}_{os}_{arch}.deb 
               .RPM _________________ {component}-{version}.{os}.{arch}.rpm  (No name change)
         4) Move the renamed artifacts to a staging directory at "<WorkDir>/output"
-    .INPUTS 
+    .NOTES
+    The following environment variable is required to be set before the script can be run:
         $DevOpsPat ____________ (String) Environment variable contains DevOps Personal Access Token (with Build:Read privilege) in UTF8 encoding
     .PARAMETER BuildId
         DevOps build ID for the downloading artifacts
@@ -142,7 +143,8 @@ function Prepare-DevOps-Artifacts
               .DEB _________________ {component}_{version}_{os}_{arch}.deb 
               .RPM _________________ {component}-{version}.{os}.{arch}.rpm  (No name change)
         4) Move the renamed artifacts to a staging directory at "<WorkDir>/output"
-    .INPUTS 
+    .NOTES
+    The following environment variable is required to be set before the script can be run:
         $GitHubPat ____________ (String) Environment variable contains BASE64 Github Personal Access Token (with Repos:Read&Write privilege) in UTF8 encoding
     .PARAMETER CommitId
         Github SHA1 commit id
@@ -295,7 +297,8 @@ function Prepare-GitHub-Artifacts
         2) Extract a relavant CHANGELOG.md section for the release page description
         3) Create a new GitHub release page against 'Azure/azure-iotedge' repository
         4) Upload an artifact from the directory with a corresponding MIMETYPE.
-    .INPUTS 
+    .NOTES
+    The following environment variable is required to be set before the script can be run:
         $GitHubPat ____________ (String) Environment variable contains BASE64 Github Personal Access Token (with Repos:Read&Write privilege) in UTF8 encoding
     .PARAMETER WorkDir
         Absolute path of the working directory
