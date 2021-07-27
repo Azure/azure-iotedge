@@ -13,8 +13,8 @@
               .RPM _________________ {component}-{version}.{os}.{arch}.rpm  (No name change)
         4) Move the renamed artifacts to a staging directory at "<WorkDir>/output"
     .NOTES
-    The following environment variable is required to be set before the script can be run:
-        $DevOpsPat ____________ (String) Environment variable contains DevOps Personal Access Token (with Build:Read privilege) in UTF8 encoding
+    The following variable is required to be set before the script can be run:
+        $DevOpsPat ____________ (String) variable contains DevOps Personal Access Token (with Build:Read privilege) in UTF8 encoding
     .PARAMETER BuildId
         DevOps build ID for the downloading artifacts
     .PARAMETER WorkDir
@@ -41,7 +41,7 @@ function Prepare-DevOps-Artifacts
 
     if ([string]::IsNullOrEmpty($DevOpsPat))
     {
-        echo 'Environment variable ($DevOpsPat) is required.'
+        echo 'variable ($DevOpsPat) is required.'
         return 1;
     }
     else
@@ -144,8 +144,8 @@ function Prepare-DevOps-Artifacts
               .RPM _________________ {component}-{version}.{os}.{arch}.rpm  (No name change)
         4) Move the renamed artifacts to a staging directory at "<WorkDir>/output"
     .NOTES
-    The following environment variable is required to be set before the script can be run:
-        $GitHubPat ____________ (String) Environment variable contains BASE64 Github Personal Access Token (with Repos:Read&Write privilege) in UTF8 encoding
+    The following variable is required to be set before the script can be run:
+        $GitHubPat ____________ (String) variable contains BASE64 Github Personal Access Token (with Repos:Read&Write privilege) in UTF8 encoding
     .PARAMETER CommitId
         Github SHA1 commit id
     .PARAMETER WorkDir
@@ -172,7 +172,7 @@ function Prepare-GitHub-Artifacts
 
     if ([string]::IsNullOrEmpty($GitHubPat))
     {
-        echo 'Environment variable ($GitHubPat) is required.'
+        echo 'variable ($GitHubPat) is required.'
         return 1;
     }
     else
@@ -298,8 +298,8 @@ function Prepare-GitHub-Artifacts
         3) Create a new GitHub release page against 'Azure/azure-iotedge' repository
         4) Upload an artifact from the directory with a corresponding MIMETYPE.
     .NOTES
-    The following environment variable is required to be set before the script can be run:
-        $GitHubPat ____________ (String) Environment variable contains BASE64 Github Personal Access Token (with Repos:Read&Write privilege) in UTF8 encoding
+    The following variable is required to be set before the script can be run:
+        $GitHubPat ____________ (String) variable contains BASE64 Github Personal Access Token (with Repos:Read&Write privilege) in UTF8 encoding
     .PARAMETER WorkDir
         Absolute path of the working directory
     .PARAMETER BranchName
@@ -328,7 +328,7 @@ function Upload-Artifacts-To-GitHub
 
     if ([string]::IsNullOrEmpty($GitHubPat))
     {
-        echo 'Environment variable ($GitHubPat) is required.'
+        echo 'variable ($GitHubPat) is required.'
         return 1;
     }
     else
