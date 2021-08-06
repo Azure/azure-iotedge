@@ -97,6 +97,14 @@ function Prepare-DevOps-Artifacts
             continue;
         }
 
+        # Mariner packages do not need renaming, not staging.
+        if ($os -eq "mariner")
+        {
+            echo "Skip renaming :"
+            echo $($packages.FullName)
+            continue;
+        }
+
         # Ranaming the artifacts
         foreach ($package in $packages)
         {
@@ -251,6 +259,14 @@ function Prepare-GitHub-Artifacts
             echo "Skip renaming :"
             echo $artifactPath
             $artifactFinalists += $packages;
+            continue;
+        }
+
+        # Mariner packages do not need renaming, not staging.
+        if ($os -eq "mariner")
+        {
+            echo "Skip renaming :"
+            echo $($packages.FullName)
             continue;
         }
 
