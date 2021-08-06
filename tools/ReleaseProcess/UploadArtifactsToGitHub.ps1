@@ -126,7 +126,7 @@ function Prepare-DevOps-Artifacts
     {
         echo "Moving : $($artifact.FullName)"
         echo "To : $(Join-Path -Path $outputDir -ChildPath $artifact.Name)"
-        Move-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
+        Copy-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
     }
 }
 
@@ -284,7 +284,7 @@ function Prepare-GitHub-Artifacts
     {
         echo "Moving : $($artifact.FullName)"
         echo "To : $(Join-Path -Path $outputDir -ChildPath $artifact.Name)"
-        Move-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
+        Copy-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
     }
 }
 
