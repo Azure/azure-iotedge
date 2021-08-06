@@ -97,6 +97,14 @@ function Prepare-DevOps-Artifacts
             continue;
         }
 
+        # Mariner packages do not need renaming, not staging.
+        if ($os -eq "mariner")
+        {
+            echo "Skip renaming :"
+            echo $($packages.FullName)
+            continue;
+        }
+
         # Ranaming the artifacts
         foreach ($package in $packages)
         {
@@ -126,7 +134,7 @@ function Prepare-DevOps-Artifacts
     {
         echo "Moving : $($artifact.FullName)"
         echo "To : $(Join-Path -Path $outputDir -ChildPath $artifact.Name)"
-        Move-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
+        Copy-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
     }
 }
 
@@ -254,6 +262,14 @@ function Prepare-GitHub-Artifacts
             continue;
         }
 
+        # Mariner packages do not need renaming, not staging.
+        if ($os -eq "mariner")
+        {
+            echo "Skip renaming :"
+            echo $($packages.FullName)
+            continue;
+        }
+
         # Renaming
         foreach ($package in $packages)
         {
@@ -284,7 +300,7 @@ function Prepare-GitHub-Artifacts
     {
         echo "Moving : $($artifact.FullName)"
         echo "To : $(Join-Path -Path $outputDir -ChildPath $artifact.Name)"
-        Move-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
+        Copy-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
     }
 }
 
