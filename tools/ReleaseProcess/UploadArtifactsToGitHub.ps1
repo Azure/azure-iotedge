@@ -138,6 +138,129 @@ function Prepare-DevOps-Artifacts
     }
 }
 
+<#
+    .SYNOPSIS
+        This function turns *.zip archeives downloaded from from /iotedge and /iot-identity-service into a set of
+        artifacts ready for the Github release page.
+    .DESCRIPTION
+        User Manual: 
+        1) The user downloads *.zip artifact from the build pipeline (for iotedged) and github action (for iot-identity-service)
+           into a directory
+        2) Set the $WorkDir of this function to be pointing to the directory on step (1)
+        3) The user calls "Prepare-Local-Artifacts -WorkDir $WorkDir"
+        4) The functions prepare the artifacts and move the renamed artifacts to a staging directory at "<WorkDir>/output"
+    .PARAMETER WorkDir
+        Absolute path of the working directory
+#>
+function Prepare-Local-Artifacts
+{
+    [CmdletBinding()]
+    param (
+        <# 
+        Absolute path of the working directory
+        #>
+        [Parameter(Mandatory)]
+        [string]
+        $WorkDir
+    )
+
+    $outputDir = "$(Join-Path -Path $WorkDir -ChildPath 'output')\"
+    New-Item -ItemType Directory -Force -Path $outputDir
+
+    $artifactFinalists = @();
+    $artifactExtension = ".zip"
+    $zipArtifacts = $(Get-ChildItem $WorkDir)
+
+    foreach ($zipArtifact in $zipArtifacts)
+    {
+        $artifactName = $zipArtifact.BaseName
+        $artifactPath = $(Join-Path -Path $zipArtifact.Directory.FullName -ChildPath $artifactName)
+
+        # Assuming no naming collision between the zip artifacts
+        Expand-Archive -Path $zipArtifact.PSPath -DestinationPath $artifactPath -Force
+
+        # Each zipArtifact turns into a directory, fetch the packages within it.
+        $packages = $(Get-ChildItem -Path $artifactPath -Recurse `
+            -Include "*.deb", "*.rpm" `
+            -Exclude "*.src*", "*dev*", "*dbg*", "*debug*" `
+            | where { ! $_.PSIsContainer })
+
+        # Parsing & construct the fanal output name depending on the input zip artifact
+        Switch -regex ($zipArtifact.Name)
+        {
+            "iotedged*" 
+            {
+                # Within each directory, rename the artifacts
+                $component,$os,$suffix = $artifactName.split('-')
+            }
+            "packages*" 
+            {
+                # Within each directory, rename the artifacts (i.e. "packages_debian-10-slim_aarch64")
+                $component,$os,$suffix = $artifactName.split('_')
+                $osName,$osVersion,$osType,$suffix = $os.split('-')
+                $os = @($osName,$osVersion) -join '' 
+            }
+        }
+
+        # CentOs7 packages do not need renaming.
+        if ($os -eq "centos7")
+        {
+            echo "Skip renaming :"
+            echo $($packages.FullName)
+            $artifactFinalists += $packages;
+            continue;
+        }
+
+        if ($os -eq "redhatubi8")
+        {
+            # To do: Figure out what to call RedHat el8 (what format?)
+            echo "Excluding :"
+            echo $($packages.FullName)
+            continue;
+        }
+
+        # Mariner packages do not need renaming, not staging.
+        if ($os -eq "mariner")
+        {
+            echo "Excluding :"
+            echo $($packages.FullName)
+            continue;
+        }
+
+        # Ranaming the artifacts
+        foreach ($package in $packages)
+        {
+            echo "Processing : $($package.FullName)"
+            $name,$version,$arch,$suffix = $package.Name.split("_")
+            $arch,$ext,$suffix = $arch.split(".")
+
+            # Reconstruct the new name from the segments. 
+            $finalName = @($name, $version, $os, $arch) -join '_'
+            $finalName = "$finalName.$ext"
+            $newPath = $(Join-Path -Path "$($package.Directory)" -ChildPath "$finalName")
+
+            # Rename
+            Rename-Item -Path $package.FullName -NewName $newPath
+
+            # Record renamed files
+            $artifactFinalists += $(Get-Item $newPath)
+        }
+
+        echo ""
+
+    }
+
+    echo ""
+
+    # Stage uploading files
+    foreach ($artifact in $artifactFinalists)
+    {
+        echo "Moving : $($artifact.FullName)"
+        echo "To : $(Join-Path -Path $outputDir -ChildPath $artifact.Name)"
+        Copy-Item -Path $artifact.FullName -Destination $(Join-Path -Path $outputDir -ChildPath $artifact.Name) -Force
+    }
+}
+
 
 <#
     .SYNOPSIS
