@@ -100,7 +100,7 @@ function Prepare-DevOps-Artifacts
         # Mariner packages do not need renaming, not staging.
         if ($os -eq "mariner")
         {
-            echo "Skip renaming :"
+            echo "Excluding :"
             echo $($packages.FullName)
             continue;
         }
@@ -388,7 +388,7 @@ function Prepare-GitHub-Artifacts
         # Mariner packages do not need renaming, not staging.
         if ($os -eq "mariner")
         {
-            echo "Skip renaming :"
+            echo "Excluding :"
             echo $($packages.FullName)
             continue;
         }
