@@ -27,5 +27,20 @@ Issues can be filed in the [issues section](https://github.com/azure/iotedge/iss
 ## Feature requests
 Feature requests can be filed on the [Azure IoT Edge User Voice page](https://feedback.azure.com/forums/907045-azure-iot-edge). 
 
-## Directory structure
+## Telemetry
+IoT Edge sends basic telemetry data to Microsoft about the host device. This data may be used to improve Microsoft products and services. This data includes:
 
+* CPU architecture
+* DMI System Manufacturer
+* DMI System Product
+* Kernel name
+* Kernel release
+* Kernel version
+* OS name
+* OS version
+* OS variant
+* OS build
+
+To opt out, set the `DisableDeviceAnalyticsTelemetry` [environment variable on EdgeAgent](https://github.com/Azure/iotedge/blob/master/doc/EnvironmentVariables.md).
+
+To learn more about Microsoft policies, review the [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839&clcid=0x409).
