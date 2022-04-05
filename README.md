@@ -31,8 +31,6 @@ Feature requests can be filed on the [Azure IoT Edge User Voice page](https://fe
 IoT Edge sends basic telemetry data to Microsoft about the host device. This data may be used to improve Microsoft products and services. This data includes:
 
 * CPU architecture
-* DMI System Manufacturer
-* DMI System Product
 * Kernel name
 * Kernel release
 * Kernel version
@@ -40,7 +38,9 @@ IoT Edge sends basic telemetry data to Microsoft about the host device. This dat
 * OS version
 * OS variant
 * OS build
+* System Manufacturer
+* System Product
 
-To opt out, set the `DisableDeviceAnalyticsTelemetry` [environment variable on EdgeAgent](https://github.com/Azure/iotedge/blob/master/doc/EnvironmentVariables.md).
+To opt out, set the `DisableDeviceAnalyticsTelemetry` [environment variable on EdgeAgent](https://github.com/Azure/iotedge/blob/main/doc/EnvironmentVariables.md).
 
 To learn more about Microsoft policies, review the [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839&clcid=0x409).
