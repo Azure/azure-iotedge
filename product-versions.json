@@ -1,0 +1,104 @@
+{
+    "schemaVersion": "1.0",
+    "channels": [
+      {
+        "name": "stable",
+        "products":   [
+          {
+            "name": "Azure IoT Edge",
+            "id": "aziot-edge",
+            "version": "1.3.0",
+            "components": [
+              {
+                "name": "aziot-edge",
+                "version": "1.3.0"
+              },
+              {
+                "name": "aziot-identity-service",
+                "version": "1.3.0"
+              },
+                {
+                "name": "azureiotedge-agent",
+                "type": "dockerImage",
+                "version": "1.3.0"
+              },
+              {
+                "name": "azureiotedge-hub",
+                "type": "dockerImage",
+                "version": "1.3.0"
+              },
+              {
+                "name": "azureiotedge-simulated-temperature-sensor",
+                "type": "dockerImage",
+                "version": "1.3.0"
+              },
+              {
+                "name": "azureiotedge-diagnostics",
+                "type": "dockerImage",
+                "version": "1.3.0"
+              }
+            ]
+          },
+          {
+            "name": "Metrics Collector",
+            "id": "metrics-collector",
+            "components": [
+              {
+                "name": "azureiotedge-metrics-collector",
+                "type": "dockerImage",
+                "version": "1.0.9"
+              }
+            ]
+          },
+          {
+            "name": "API Proxy",
+            "id": "metrics-collector",
+            "components": [
+              {
+                "name": "azureiotedge-api-proxy",
+                "type": "dockerImage",
+                "version": "1.1.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lts",
+        "products": [
+          {
+            "name": "Azure IoT Edge 1.1 LTS",
+            "id": "aziot-edge",
+            "version": "1.1.15",
+            "components": [
+              {
+                "name": "iotedge",
+                "version": "1.1.15"
+              },
+              {
+                "name": "azureiotedge-agent",
+                "type": "dockerImage",
+                "version": "1.1.15"
+              },
+              {
+                "name": "azureiotedge-hub",
+                "type": "dockerImage",
+                "version": "1.1.15"
+              },
+              {
+                "name": "azureiotedge-simulated-temperature-sensor",
+                "type": "dockerImage",
+                "version": "1.1.15"
+              },
+              {
+                "name": "azureiotedge-diagnostics",
+                "type": "dockerImage",
+                "version": "1.1.15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
