@@ -26,7 +26,6 @@
               "name": "package",
               "platforms": [
                 {
-                  // https://packages.microsoft.com/debian/11/prod/pool/main/
                   "os": "debian",
                   "version": "11",
                   "arch": [
@@ -34,7 +33,6 @@
                   ]
                 },
                 {
-                  // https://packages.microsoft.com/rhel/8/prod/
                   "os": "redhat",
                   "version": "8",
                   "arch": [
@@ -42,7 +40,6 @@
                   ]
                 },
                 {
-                  // https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/
                   "os": "ubuntu",
                   "version": "18.04",
                   "arch": [
@@ -51,7 +48,6 @@
                   ]
                 },
                 {
-                  // https://packages.microsoft.com/ubuntu/20.04/prod/pool/main/
                   "os": "ubuntu",
                   "version": "20.04",
                   "arch": [
@@ -177,11 +173,9 @@
               ]
             },
             {
-              // https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/i/iotedge/
               "name": "package",
               "platforms": [
                 {
-                  // https://packages.microsoft.com/debian/stretch/multiarch/prod/pool/main/i/iotedge/
                   "os": "debian",
                   "version": "stretch",
                   "arch": [
@@ -189,7 +183,6 @@
                   ]
                 },
                 {
-                  // https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/
                   "os": "ubuntu",
                   "version": "18.04",
                   "arch": [
@@ -198,7 +191,6 @@
                   ]
                 },
                 {
-                  // https://packages.microsoft.com/ubuntu/20.04/prod/pool/main/
                   "os": "ubuntu",
                   "version": "20.04",
                   "arch": [
