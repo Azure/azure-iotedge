@@ -8,7 +8,7 @@
           "name": "Azure IoT Edge",
           "id": "aziot-edge",
           "version": "1.3.0",
-          "types" : [
+          "componentTypes" : [
             {
               "name": "dockerImage",
               "platforms": [
@@ -21,15 +21,56 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "package",
+              "platforms": [
+                {
+                  // https://packages.microsoft.com/debian/11/prod/pool/main/
+                  "os": "debian",
+                  "version": "11",
+                  "arch": [
+                    "armhf"
+                  ]
+                },
+                {
+                  // https://packages.microsoft.com/rhel/8/prod/
+                  "os": "redhat",
+                  "version": "8",
+                  "arch": [
+                    "x86_64"
+                  ]
+                },
+                {
+                  // https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/
+                  "os": "ubuntu",
+                  "version": "18.04",
+                  "arch": [
+                    "amd64",
+                    "arm64"
+                  ]
+                },
+                {
+                  // https://packages.microsoft.com/ubuntu/20.04/prod/pool/main/
+                  "os": "ubuntu",
+                  "version": "20.04",
+                  "arch": [
+                    "amd64",
+                    "arm64"
+                  ]
+                }
+              ]
             }
           ],
           "components": [
             {
               "name": "aziot-edge",
+              "type": "package",
               "version": "1.3.0"
             },
             {
               "name": "aziot-identity-service",
+              "type": "package",
               "version": "1.3.0"
             },
             {
@@ -57,7 +98,7 @@
         {
           "name": "Metrics Collector",
           "id": "metrics-collector",
-          "types" : [
+          "componentTypes" : [
             {
               "name": "dockerImage",
               "platforms": [
@@ -83,7 +124,7 @@
         {
           "name": "API Proxy",
           "id": "metrics-collector",
-          "types" : [
+          "componentTypes" : [
             {
               "name": "dockerImage",
               "platforms": [
@@ -115,7 +156,7 @@
           "name": "Azure IoT Edge 1.1 LTS",
           "id": "aziot-edge",
           "version": "1.1.15",
-          "types" : [
+          "componentTypes" : [
             {
               "name": "dockerImage",
               "platforms": [
@@ -134,11 +175,49 @@
                   ]
                 }
               ]
+            },
+            {
+              // https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/i/iotedge/
+              "name": "package",
+              "platforms": [
+                {
+                  // https://packages.microsoft.com/debian/stretch/multiarch/prod/pool/main/i/iotedge/
+                  "os": "debian",
+                  "version": "stretch",
+                  "arch": [
+                    "armhf"
+                  ]
+                },
+                {
+                  // https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/
+                  "os": "ubuntu",
+                  "version": "18.04",
+                  "arch": [
+                    "amd64",
+                    "arm64"
+                  ]
+                },
+                {
+                  // https://packages.microsoft.com/ubuntu/20.04/prod/pool/main/
+                  "os": "ubuntu",
+                  "version": "20.04",
+                  "arch": [
+                    "amd64",
+                    "arm64"
+                  ]
+                }
+              ]
             }
           ],
           "components": [
             {
               "name": "iotedge",
+              "type": "package",
+              "version": "1.1.15"
+            },
+            {
+              "name": "libiothsm-std",
+              "type": "package",
               "version": "1.1.15"
             },
             {
