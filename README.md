@@ -28,9 +28,11 @@ Issues can be filed in the [issues section](https://github.com/azure/iotedge/iss
 Feature requests can be filed on the [Azure IoT Edge User Voice page](https://feedback.azure.com/forums/907045-azure-iot-edge). 
 
 ## Telemetry
-IoT Edge sends basic telemetry data to Microsoft about the host device. This data may be used to improve Microsoft products and services. This data includes:
+IoT Edge sends basic metadata to Microsoft about the host device. This data may be used to improve Microsoft products and services. This data includes:
 
 * CPU architecture
+* Total memory
+* Virtualized machine
 * Kernel name
 * Kernel release
 * Kernel version
@@ -41,6 +43,6 @@ IoT Edge sends basic telemetry data to Microsoft about the host device. This dat
 * System Manufacturer
 * System Product
 
-To opt out, set the `DisableDeviceAnalyticsTelemetry` [environment variable on EdgeAgent](https://github.com/Azure/iotedge/blob/main/doc/EnvironmentVariables.md).
+To opt out, set the `DisableDeviceAnalyticsMetadata` [environment variable on EdgeAgent](https://github.com/Azure/iotedge/blob/main/doc/EnvironmentVariables.md).
 
 To learn more about Microsoft policies, review the [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839&clcid=0x409).
