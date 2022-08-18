@@ -82,7 +82,7 @@
         },
         {
           "name": "API Proxy",
-          "id": "metrics-collector",
+          "id": "api-proxy",
           "componentTypes" : [
             {
               "name": "dockerImage",
