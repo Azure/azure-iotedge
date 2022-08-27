@@ -27,7 +27,7 @@ Issues can be filed in the [issues section](https://github.com/azure/iotedge/iss
 ## Feature requests
 Feature requests can be filed on the [Azure IoT Edge User Voice page](https://feedback.azure.com/forums/907045-azure-iot-edge). 
 
-## Telemetry
+## Data / Telemetry
 IoT Edge sends basic metadata to Microsoft about the host device. This data may be used to improve Microsoft products and services. This data includes:
 
 * CPU architecture
