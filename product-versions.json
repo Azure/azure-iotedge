@@ -219,5 +219,44 @@
         }
       ]
     }
+  ],
+  "sources": [
+    {
+      "repo": "Azure/iotedge",
+      "branch": "release/1.4",
+      "products": [
+        {
+          "channel": "stable",
+          "id": "aziot-edge",
+          "version": "1.4"
+        },
+        {
+          "channel": "stable",
+          "id": "api-proxy",
+          "version": "1"
+        },
+        {
+          "channel": "lts",
+          "id": "aziot-edge",
+          "version": "1.4"
+        }
+      ]
+    },
+    {
+      "repo": "Azure/iotedge",
+      "branch": "release/1.1",
+      "products": [
+        {
+          "channel": "stable",
+          "id": "metrics-collector",
+          "version": "1"
+        },
+        {
+          "channel": "lts",
+          "id": "aziot-edge",
+          "version": "1.1"
+        }
+      ]
+    }
   ]
 }
