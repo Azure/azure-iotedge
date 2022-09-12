@@ -8,7 +8,7 @@
           "name": "Azure IoT Edge",
           "id": "aziot-edge",
           "version": "1.4.0",
-          "componentTypes" : [
+          "componentTypes": [
             {
               "name": "dockerImage",
               "platforms": [
@@ -57,7 +57,8 @@
         {
           "name": "Metrics Collector",
           "id": "metrics-collector",
-          "componentTypes" : [
+          "version": "1.0.9",
+          "componentTypes": [
             {
               "name": "dockerImage",
               "platforms": [
@@ -83,7 +84,8 @@
         {
           "name": "API Proxy",
           "id": "api-proxy",
-          "componentTypes" : [
+          "version": "1.1.3",
+          "componentTypes": [
             {
               "name": "dockerImage",
               "platforms": [
@@ -115,7 +117,7 @@
           "name": "Azure IoT Edge 1.4 LTS",
           "id": "aziot-edge",
           "version": "1.4.0",
-          "componentTypes" : [
+          "componentTypes": [
             {
               "name": "dockerImage",
               "platforms": [
@@ -165,7 +167,7 @@
           "name": "Azure IoT Edge 1.1 LTS",
           "id": "aziot-edge",
           "version": "1.1.16",
-          "componentTypes" : [
+          "componentTypes": [
             {
               "name": "dockerImage",
               "platforms": [
