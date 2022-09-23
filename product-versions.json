@@ -7,7 +7,7 @@
         {
           "name": "Azure IoT Edge",
           "id": "aziot-edge",
-          "version": "1.4.0",
+          "version": "1.4.1",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -26,11 +26,11 @@
           "components": [
             {
               "name": "aziot-edge",
-              "version": "1.4.0"
+              "version": "1.4.1"
             },
             {
               "name": "aziot-identity-service",
-              "version": "1.4.0"
+              "version": "1.4.1"
             },
             {
               "name": "azureiotedge-agent",
@@ -50,14 +50,14 @@
             {
               "name": "azureiotedge-diagnostics",
               "type": "dockerImage",
-              "version": "1.4.0"
+              "version": "1.4.1"
             }
           ]
         },
         {
           "name": "Metrics Collector",
           "id": "metrics-collector",
-          "version": "1.0.9",
+          "version": "1.0.10",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -77,7 +77,7 @@
             {
               "name": "azureiotedge-metrics-collector",
               "type": "dockerImage",
-              "version": "1.0.9"
+              "version": "1.0.10"
             }
           ]
         },
@@ -116,7 +116,7 @@
         {
           "name": "Azure IoT Edge 1.4 LTS",
           "id": "aziot-edge",
-          "version": "1.4.0",
+          "version": "1.4.1",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -135,11 +135,11 @@
           "components": [
             {
               "name": "aziot-edge",
-              "version": "1.4.0"
+              "version": "1.4.1"
             },
             {
               "name": "aziot-identity-service",
-              "version": "1.4.0"
+              "version": "1.4.1"
             },
             {
               "name": "azureiotedge-agent",
@@ -159,7 +159,7 @@
             {
               "name": "azureiotedge-diagnostics",
               "type": "dockerImage",
-              "version": "1.4.0"
+              "version": "1.4.1"
             }
           ]
         },
