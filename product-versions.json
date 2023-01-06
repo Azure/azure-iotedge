@@ -65,7 +65,7 @@
         {
           "name": "Metrics Collector",
           "id": "metrics-collector",
-          "version": "1.0.12",
+          "version": "1.1.0",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -77,12 +77,6 @@
                     "arm64v8",
                     "arm32v7"
                   ]
-                },
-                {
-                  "os": "windows",
-                  "arch": [
-                    "amd64"
-                  ]
                 }
               ]
             }
@@ -90,10 +84,10 @@
           "components": [
             {
               "name": "azureiotedge-metrics-collector",
-              "branch": "release/1.1",
+              "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.0.12"
+              "version": "1.1.0"
             }
           ]
         },
