@@ -7,7 +7,7 @@
         {
           "name": "Azure IoT Edge",
           "id": "aziot-edge",
-          "version": "1.4.24",
+          "version": "1.4.25",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -37,21 +37,21 @@
               "type": "dockerImage",
               "branch": "release/1.4",
               "repo": "Azure/iotedge",
-              "version": "1.4.24"
+              "version": "1.4.25"
             },
             {
               "name": "azureiotedge-hub",
               "branch": "release/1.4",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.4.24"
+              "version": "1.4.25"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
               "branch": "release/1.4",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.4.24"
+              "version": "1.4.25"
             },
             {
               "name": "azureiotedge-diagnostics",
@@ -128,7 +128,7 @@
         {
           "name": "Azure IoT Edge 1.4 LTS",
           "id": "aziot-edge",
-          "version": "1.4.24",
+          "version": "1.4.25",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -158,21 +158,21 @@
               "branch": "release/1.4",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.4.24"
+              "version": "1.4.25"
             },
             {
               "name": "azureiotedge-hub",
               "branch": "release/1.4",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.4.24"
+              "version": "1.4.25"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
               "branch": "release/1.4",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.4.24"
+              "version": "1.4.25"
             },
             {
               "name": "azureiotedge-diagnostics",
