@@ -65,7 +65,7 @@
         {
           "name": "Azure IoT Edge",
           "id": "aziot-edge",
-          "version": "1.5.7",
+          "version": "1.5.8",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -84,7 +84,7 @@
           "components": [
             {
               "name": "aziot-edge",
-              "version": "1.5.7"
+              "version": "1.5.8"
             },
             {
               "name": "aziot-identity-service",
@@ -116,7 +116,7 @@
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.7"
+              "version": "1.5.8"
             }
           ]
         }
@@ -186,7 +186,7 @@
         {
           "name": "Azure IoT Edge 1.5 LTS",
           "id": "aziot-edge",
-          "version": "1.5.7",
+          "version": "1.5.8",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -205,7 +205,7 @@
           "components": [
             {
               "name": "aziot-edge",
-              "version": "1.5.7"
+              "version": "1.5.8"
             },
             {
               "name": "aziot-identity-service",
@@ -237,7 +237,7 @@
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.7"
+              "version": "1.5.8"
             }
           ]
         }
