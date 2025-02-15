@@ -7,7 +7,7 @@
         {
           "name": "Metrics Collector",
           "id": "metrics-collector",
-          "version": "1.2.15",
+          "version": "1.2.16",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -29,7 +29,7 @@
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.2.15"
+              "version": "1.2.16"
             }
           ]
         },
