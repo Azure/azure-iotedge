@@ -65,7 +65,7 @@
         {
           "name": "Azure IoT Edge",
           "id": "aziot-edge",
-          "version": "1.5.18",
+          "version": "1.5.19",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -95,21 +95,21 @@
               "type": "dockerImage",
               "branch": "main",
               "repo": "Azure/iotedge",
-              "version": "1.5.18"
+              "version": "1.5.19"
             },
             {
               "name": "azureiotedge-hub",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.18"
+              "version": "1.5.19"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.18"
+              "version": "1.5.19"
             },
             {
               "name": "azureiotedge-diagnostics",
@@ -186,7 +186,7 @@
         {
           "name": "Azure IoT Edge 1.5 LTS",
           "id": "aziot-edge",
-          "version": "1.5.18",
+          "version": "1.5.19",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -216,21 +216,21 @@
               "type": "dockerImage",
               "branch": "main",
               "repo": "Azure/iotedge",
-              "version": "1.5.18"
+              "version": "1.5.19"
             },
             {
               "name": "azureiotedge-hub",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.18"
+              "version": "1.5.19"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.18"
+              "version": "1.5.19"
             },
             {
               "name": "azureiotedge-diagnostics",
