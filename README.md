@@ -26,7 +26,7 @@ Azure IoT Edge LTS releases follow the .NET LTS cadence. Each LTS release aligns
 
 Current LTS planning guidance:
 * 1.5 LTS aligns with .NET 8 and is supported until .NET 8 reaches end of support on Nov 10, 2026. (See the [.NET 8 support timeline](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core#dotnet-8).)
-* 1.6 LTS is planned to align with the supported .NET 10 LTS release and is expected to be supported for three years, through Nov 14, 2028. (See the [.NET 10 support timeline](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core#dotnet-10).)
+* 1.6 LTS is planned to align with the supported .NET 10 LTS release and is expected to be supported through Nov 14, 2028. (See the [.NET 10 support timeline](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core#dotnet-10).)
 * We plan to release the next LTS approximately six months before the prior LTS reaches end of support to give customers time to upgrade.
 * Based on current plans, no major changes are expected between 1.5 LTS and 1.6 LTS, so upgrades should be straightforward.
 
