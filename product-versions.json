@@ -156,27 +156,27 @@
             {
               "name": "azureiotedge-agent",
               "type": "dockerImage",
-              "branch": "main",
+              "branch": "release/1.5",
               "repo": "Azure/iotedge",
               "version": "1.5.40"
             },
             {
               "name": "azureiotedge-hub",
-              "branch": "main",
+              "branch": "release/1.5",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.5.40"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
-              "branch": "main",
+              "branch": "release/1.5",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.5.40"
             },
             {
               "name": "azureiotedge-diagnostics",
-              "branch": "main",
+              "branch": "release/1.5",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.5.21"
