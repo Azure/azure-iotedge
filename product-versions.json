@@ -184,6 +184,69 @@
           ]
         }
       ]
+    },
+    {
+      "name": "prerelease",
+      "products": [
+        {
+          "name": "Azure IoT Edge",
+          "id": "aziot-edge",
+          "version": "1.6.0-rc.1",
+          "componentTypes": [
+            {
+              "name": "dockerImage",
+              "platforms": [
+                {
+                  "os": "linux",
+                  "arch": [
+                    "amd64",
+                    "arm64v8",
+                    "arm32v7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "components": [
+            {
+              "name": "aziot-edge",
+              "version": "1.6.0-rc.1"
+            },
+            {
+              "name": "aziot-identity-service",
+              "version": "1.6.0-rc.1"
+            },
+            {
+              "name": "azureiotedge-agent",
+              "type": "dockerImage",
+              "branch": "main",
+              "repo": "Azure/iotedge",
+              "version": "1.6.0-rc.1"
+            },
+            {
+              "name": "azureiotedge-hub",
+              "branch": "main",
+              "repo": "Azure/iotedge",
+              "type": "dockerImage",
+              "version": "1.6.0-rc.1"
+            },
+            {
+              "name": "azureiotedge-simulated-temperature-sensor",
+              "branch": "main",
+              "repo": "Azure/iotedge",
+              "type": "dockerImage",
+              "version": "1.6.0-rc.1"
+            },
+            {
+              "name": "azureiotedge-diagnostics",
+              "branch": "main",
+              "repo": "Azure/iotedge",
+              "type": "dockerImage",
+              "version": "1.6.0-rc.1"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
