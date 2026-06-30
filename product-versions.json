@@ -70,7 +70,7 @@
         {
           "name": "Azure IoT Edge 1.5 LTS",
           "id": "aziot-edge",
-          "version": "1.5.41",
+          "version": "1.5.42",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -100,21 +100,21 @@
               "type": "dockerImage",
               "branch": "release/1.5",
               "repo": "Azure/iotedge",
-              "version": "1.5.41"
+              "version": "1.5.42"
             },
             {
               "name": "azureiotedge-hub",
               "branch": "release/1.5",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.41"
+              "version": "1.5.42"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
               "branch": "release/1.5",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.5.41"
+              "version": "1.5.42"
             },
             {
               "name": "azureiotedge-diagnostics",
