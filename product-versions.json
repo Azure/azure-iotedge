@@ -65,7 +65,7 @@
         {
           "name": "Azure IoT Edge",
           "id": "aziot-edge",
-          "version": "1.6.3",
+          "version": "1.6.4",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -84,7 +84,7 @@
           "components": [
             {
               "name": "aziot-edge",
-              "version": "1.6.0"
+              "version": "1.6.4"
             },
             {
               "name": "aziot-identity-service",
@@ -95,28 +95,28 @@
               "type": "dockerImage",
               "branch": "main",
               "repo": "Azure/iotedge",
-              "version": "1.6.3"
+              "version": "1.6.4"
             },
             {
               "name": "azureiotedge-hub",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.6.3"
+              "version": "1.6.4"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.6.3"
+              "version": "1.6.4"
             },
             {
               "name": "azureiotedge-diagnostics",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.6.0"
+              "version": "1.6.4"
             }
           ]
         }
@@ -128,7 +128,7 @@
         {
           "name": "Azure IoT Edge 1.6 LTS",
           "id": "aziot-edge",
-          "version": "1.6.3",
+          "version": "1.6.4",
           "componentTypes": [
             {
               "name": "dockerImage",
@@ -147,7 +147,7 @@
           "components": [
             {
               "name": "aziot-edge",
-              "version": "1.6.0"
+              "version": "1.6.4"
             },
             {
               "name": "aziot-identity-service",
@@ -158,28 +158,28 @@
               "type": "dockerImage",
               "branch": "main",
               "repo": "Azure/iotedge",
-              "version": "1.6.3"
+              "version": "1.6.4"
             },
             {
               "name": "azureiotedge-hub",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.6.3"
+              "version": "1.6.4"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.6.3"
+              "version": "1.6.4"
             },
             {
               "name": "azureiotedge-diagnostics",
               "branch": "main",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
-              "version": "1.6.0"
+              "version": "1.6.4"
             }
           ]
         },
