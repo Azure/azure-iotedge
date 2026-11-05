@@ -30,6 +30,18 @@ Current LTS planning guidance:
 * We plan to release the next LTS approximately six months before the prior LTS reaches end of support to give customers time to upgrade.
 * Based on current plans, no major changes are expected between 1.5 LTS and 1.6 LTS, so upgrades should be straightforward.
 
+## Release metadata maintenance
+
+[product-versions.json](./product-versions.json) describes published product versions.
+Its Docker image component `branch` fields determine which IoT Edge branch's
+base image update pipeline checks those images.
+
+* Keep 1.6 image components mapped to `release/1.6` in both the stable and LTS channels.
+* Keep 1.5 image components mapped to `release/1.5` until its end of support.
+* When 1.7 is published, add its release metadata with image components mapped to `main`;
+  do not change published 1.6 image versions merely because development moves to 1.7.
+* API Proxy and Metrics Collector are independently versioned and remain mapped to `main`.
+
 ## Issues
 Issues can be filed in the [issues section](https://github.com/azure/iotedge/issues) of the IoT Edge GitHub repo. Azure IoT Edge is built from the open-source IoT Edge project. Development and bug fixing happens in the repo of the open-source project.
 

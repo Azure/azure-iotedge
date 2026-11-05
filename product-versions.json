@@ -93,27 +93,27 @@
             {
               "name": "azureiotedge-agent",
               "type": "dockerImage",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "version": "1.6.8"
             },
             {
               "name": "azureiotedge-hub",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.6.8"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.6.8"
             },
             {
               "name": "azureiotedge-diagnostics",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.6.4"
@@ -156,27 +156,27 @@
             {
               "name": "azureiotedge-agent",
               "type": "dockerImage",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "version": "1.6.8"
             },
             {
               "name": "azureiotedge-hub",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.6.8"
             },
             {
               "name": "azureiotedge-simulated-temperature-sensor",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.6.8"
             },
             {
               "name": "azureiotedge-diagnostics",
-              "branch": "main",
+              "branch": "release/1.6",
               "repo": "Azure/iotedge",
               "type": "dockerImage",
               "version": "1.6.4"
